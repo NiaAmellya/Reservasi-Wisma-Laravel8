@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\RoomtypeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +25,7 @@ Route::get('admin', function () {
 });
 
 Route::get('dashboard', [PageController::class, 'adminHome']);
+
+// RoomType Routes
+Route::get('admin/roomtype/{id}/delete', [RoomtypeController::class, 'destroy']);
+Route::resource('admin/roomtype', RoomtypeController::class);
