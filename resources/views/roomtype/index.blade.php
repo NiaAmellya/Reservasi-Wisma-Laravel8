@@ -20,7 +20,7 @@
                         <tr>
                             <th>#</th>
                             <th>Title</th>
-                            <th>Price</th>
+                            <th>Pfirice</th>
                             <th>GalleryImages</th>
                             <th>Action</th>
                         </tr>
